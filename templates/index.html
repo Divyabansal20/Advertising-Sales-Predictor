@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advertisement Sales Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1>Predict Sales</h1>
+
+    <form action="/predict" method="POST">
+        <label for="tv">TV Budget</label>
+        <input type="text" name="tv" id="tv">
+        
+        <label for="radio">RADIO Budget</label>
+        <input type="text" name="radio" id="radio">
+
+        <button type="submit">Predict</button>
+
+        
+
+    </form>
+    {% if prediction %}
+            <div class="result">
+                <h2>Predicted Sales: {{ prediction }}</h2>
+            </div>
+    {% endif %}
+</body>
+</html>

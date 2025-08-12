@@ -13,16 +13,19 @@ The model used is **Linear Regression**, trained on the classic Advertising data
 | TV      | Budget spent on TV ads (in $1000s)  | float      | e.g., 0–300    |
 | Radio   | Budget spent on Radio ads (in $1000s)| float     | e.g., 0–50     |
 
+![Project Screenshot](salespredictor.png)
+
+
 ➡️ **Output:**  
 The predicted **Sales** is also in **thousands of dollars**, calculated using the input budget values.
 
 **Example:**  
 If you enter:  
-- TV = 150  
-- Radio = 20  
+- TV = 120  
+- Radio = 300  
 
 The model may predict:  
-**Predicted Sales: 18.23** (i.e., approx $18,230)
+**Predicted Sales: 65.6** (i.e., approx $65,600)
 
 ---
 
